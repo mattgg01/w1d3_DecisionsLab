@@ -1,20 +1,34 @@
 ////////// PROBLEM 1 //////////
 /*
-  Create a variable called 'lovesCode' and set it equal to true. 
-  Check to see if 'lovesCode' is equal to true or false. 
-  If it is true, console log "I love to code!"
-  If it is not, console log "Coding has its challenges."
+
 */
 
 //CODE HERE
 
+let lovesCode = true
+if (lovesCode = true){
+  console.log("I love to code")
+} else if(lovesCode = flase){
+  console.log("Coding has its challenges")
+}
+
+
 // For problems 2-3 use the following lines of code:
 var amysAge = 29;
 var brittanisAge = 34;
-var amysBirthYear = 1991;
-var brittanisBirthYear = 1986;
+var amysBirthYear = 1970;
+var brittanisBirthYear = 1970;
 
 ////////// PROBLEM 2 //////////
+
+if (amysAge > brittanisAge){
+  console.log('amy is older than brittany');
+}else if (amysAge < brittanisAge){
+  console.log('brittani is older than amy');
+}else if (amysAge === brittanisAge){
+  console.log('they are the same age')
+}
+
 
 /*
   Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
@@ -26,9 +40,20 @@ var brittanisBirthYear = 1986;
 
 /*
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
+
 */
 
 //CODE HERE
+
+if (amysBirthYear === brittanisBirthYear){
+  console.log('Amy and Brittani were born in the same year')
+}else if (amysBirthYear > brittanisBirthYear){
+  console.log('Amy is younger than Brittani')
+}else if (brittanisBirthYear > amysBirthYear){
+  console.log('Brittani is younger')
+}
+
+
 
 ////////// PROBLEM 4 //////////
 
@@ -42,6 +67,15 @@ let rain = true;
 
 //CODE HERE
 
+if (temperature > 80 && rain === true){
+  console.log('one should wear a tshirt and bring an umbrella')
+}else if (temperature >= 60 && temperature <= 80 && rain === true){
+  console.log('one should wear a rain jacket');
+}else if  (temperature <= 60 && rain === true){
+  console.log('one should wear a jacket and carry an umbrella');
+}
+
+
 ////////// PROBLEM 5 //////////
 
 /*
@@ -49,7 +83,9 @@ let rain = true;
 */
 
 //CODE HERE
-
+for (let i = 0; i < 10; i++){
+  console.log('hello')
+}
 ////////// PROBLEM 6 //////////
 
 /*
@@ -57,6 +93,10 @@ let rain = true;
 */
 
 //CODE HERE
+for (let i=1; i< 11; i++){
+  console.log(i)
+ }
+
 
 ////////// PROBLEM 7 //////////
 
@@ -65,6 +105,10 @@ let rain = true;
 */
 
 //CODE HERE
+for (let number = 10; number >= 1; number--){
+   console.log(number)
+}
+
 
 
 ////////// PROBLEM 8 //////////
@@ -78,6 +122,11 @@ let passingScore = 7;
 
 //CODE HERE
 
+while (score < 7){
+  console.log('your score is not high enough') 
+  score++
+}
+
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -85,20 +134,47 @@ let passingScore = 7;
   Create a variable called 'changeMyMind' and set it equal to true. 
   Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
 
+
+
 */
 
 //CODE HERE
+let changeMyMind = true
+if(changeMyMind = true){
+  changeMyMind = false
+}else if(changeMyMind = false){
+  changeMyMind = true
+}
+
 
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
 //CODE HERE
 
+if(changeMyMind !== true){
+  changeMyMind = true
+  console.log("changeMyMind wasn't true, but now it is!")
+}
+
+
+
 ////////// ADVANCED PROBLEMS //////////
 
 ////////// PROBLEM 11 //////////
 
 let z = 5;
+token = 4
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+
+
+while (z > 0){
+  console.log(z) 
+  z--
+  if (z === 0){
+    z = token
+    token--
+  }
+}
